@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "Sowilo",
+  "appName": "sowilo",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

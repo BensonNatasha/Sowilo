@@ -1,0 +1,27 @@
+ion-content {
+    overflow-x: hidden;
+}
+
+ion-header ion-toolbar {
+    background: #b1dde9;
+}
+
+ion-toolbar ion-button {
+    left: 10px;
+    width: 50px;
+    font-size: 12px;
+    color: white;
+}
+
+.text {
+    margin: 30px 15px 50px 15px;
+    color: #1b4581;
+    font-family: Segoe UI;
+    text-align: center;
+}
+
+.text h1 {
+    color: #1b4581;
+    position: relative;
+    font-weight: bold;
+}

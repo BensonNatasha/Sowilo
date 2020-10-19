@@ -1,0 +1,37 @@
+  <ion-toolbar class="decor" color=primary>
+    <ion-buttons slot="start">
+      <ion-button href="login">Voltar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+<div>
+<h1>Cadastro</h1>
+</div>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-item class="input" style="flex: 3 2" lines="none">
+          <ion-input type="text" placeholder="Nome"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input" style="flex: 3 2" lines="none">
+          <ion-input type="email" placeholder="E-mail" [(ngModel)]="userRegister.email"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input" style="flex: 3 2" lines="none">
+          <ion-input type="password" placeholder="Senha" [(ngModel)]="userRegister.password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-button class="button" (click)="register()"  expand="block">
+        Cadastrar
+      </ion-button>
+    </ion-row>
+</ion-grid>
+  

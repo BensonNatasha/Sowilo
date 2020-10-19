@@ -1,0 +1,58 @@
+<ion-content>
+
+  <div class="box"></div>
+
+  <div class="logo">
+    <img src="assets\img\Sowilo.png" alt="">
+  </div>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-item class="input" lines="none">
+          <ion-input type="email" placeholder="E-mail" [(ngModel)]="userLogin.email"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input" style="flex: 3 2" lines="none">
+          <ion-input type="password" placeholder="Senha" [(ngModel)]="userLogin.password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+      <ion-row>
+        <ion-col class="link">
+          <a color="primary" routerLink="/password">Recuperar senha
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+
+          <ion-button class="button" expand="block" (click)="login()">
+          Entrar
+          </ion-button>
+ 
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="face">
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="add">
+        <a routerLink="/registry"> Criar conta
+        </a>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

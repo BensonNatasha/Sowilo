@@ -1,0 +1,56 @@
+.box {
+    width: 45px;
+    min-height: 100%;
+    display: block;
+    background-color: #b1dde9;
+    float: right;
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin-left: 80px;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.input {
+    color: #1b4581;
+    position: relative;
+    width: 220px;
+    font-size: 17px;
+    
+}
+
+.link {
+    font-size: 12px;
+    left: 60px;
+    position: relative;
+    text-decoration: underline;
+    height: 15px;
+}
+
+#ion-tg-0-lbl{
+    color: gray;
+    font-size: 13px;
+}
+
+.button {
+    color: #1b4581;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.add {
+    font-size: 12px;
+    left: 80px;
+    position: relative;
+    text-decoration: underline;
+    height: 15px;
+}

@@ -1,0 +1,39 @@
+.box {
+    width: 45px;
+    min-height: 100%;
+    display: block;
+    background-color: #b1dde9;
+    float: right;
+}
+
+.name {
+    margin-top: 80px;
+    margin-left: 19%;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #1b4581;
+    font-weight: bold;
+}
+
+ion-grid {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.menu {
+    margin-top: 10px;
+    align-content: center;
+    width: 150px;
+    height: 100px;
+    font-size: 17px;
+    background-color: #b1dde9;
+}
+
+.exit {
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 70px;
+    height: 60px;
+    font-size: 17px;
+    background-color: #b1dde9;
+}

@@ -1,0 +1,66 @@
+<ion-toolbar class="decor" color=primary>
+  <ion-buttons slot="end">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-buttons slot="start">
+    <ion-button href="diabetesmenu">Voltar</ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header tappable (click)="collapseCard = !collapseCard">
+      <ion-card-title>Controle de Glicemia e Insulina</ion-card-title>
+    </ion-card-header>
+    <ion-card-content *ngIf="!collapseCard">
+
+      <ion-item>
+        <ion-input type="text" placeholder="Glicemia ou Insulina?" [(ngModel)]="event.title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Coloque aqui o valor" [(ngModel)]="event.desc"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Horário</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY HH:MM" pickerFormat="MMM D:HH:MM" [(ngModel)]="event.startTime"
+          [min]="minDate">
+        </ion-datetime>
+      </ion-item>
+
+      <ion-button fill="outline" expand="block" (click)="addEvent()" [disabled]="event.title ==''">Adicionar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col size="4">
+      <ion-button expand="block" [color]="calendar.mode == 'month' ? 'primary' : 'secondary'"
+        (click)="changeMode('month')">Month</ion-button>
+    </ion-col>
+    <ion-col size="4">
+      <ion-button expand="block" [color]="calendar.mode == 'week' ? 'primary' : 'secondary'"
+        (click)="changeMode('week')">Week</ion-button>
+    </ion-col>
+    <ion-col size="4">
+      <ion-button expand="block" [color]="calendar.mode == 'day' ? 'primary' : 'secondary'" (click)="changeMode('day')">
+        Day</ion-button>
+    </ion-col>
+
+    <ion-col size="6" text-left>
+      <ion-button fill="clear" (click)="back()">
+        <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="6" text-right>
+      <ion-button fill="clear" (click)="next()">
+        <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <calendar [eventSource]="eventSource" [calendarMode]="calendar.mode" [currentDate]="calendar.currentDate"
+    (onEventSelected)="onEventSelected($event)" (onTitleChanged)="onViewTitleChanged($event)"
+    (onTimeSelected)="onTimeSelected($event)" startHour='5' endHour='22' step='30' startingDayWeek="1">
+  </calendar>
+</ion-content>

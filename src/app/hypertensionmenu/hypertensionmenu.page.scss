@@ -1,0 +1,45 @@
+.box {
+    width: 45px;
+    min-height: 100%;
+    display: block;
+    background-color: #b1dde9;
+    float: right;
+}
+
+h1 {
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #1b4581;
+    font-weight: bold;
+}
+
+ion-grid {
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+.menu {
+    margin-top: 10px;
+    align-content: center;
+    width: 150px;
+    height: 100px;
+    font-size: 17px;
+    background-color: #b1dde9;
+    span.ps{
+        font-size: 15px;
+        display:block;
+    }
+}
+
+
+.exit {
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 70px;
+    height: 60px;
+    font-size: 17px;
+    background-color: #b1dde9;
+}
+
